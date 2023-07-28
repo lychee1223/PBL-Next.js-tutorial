@@ -1,44 +1,36 @@
 /* 一般 */
 .main {
-    background-color: aqua;
-}
-
-.clear_box {
-    clear: both;
-}
-
-.icon{
-    width: 30px;
-    height: 30px;
-    float: right;
-}
-
-/* ヘッダ */
-.header {
-    height: auto;
-    width: 100%;
-    position: fixed;
-    opacity: 90%;
-}
-
-.siteName {
-    display: inline-block;
-    width: fit-content;
-}
-
-.navi {
-    float: right;
+    background-image: url(/img/background.png);
+    background-size: cover;
 }
 
 /* コンテンツ */
 .content {
-    padding: 78px 10px 10px 10px;
+    padding: 85px 10px 10px 10px;
 }
 
-.workBlock {
-    width:200px;
-    height: 200px;
-    margin: 5px;
-    padding: 20px;
-    float: left
+/* styles/globals.css */
+
+.invisibleScroll2Top {
+    display: none;
+    position: fixed;
+    right: "15px";
+    bottom: "60px";
+}
+
+.visibleScroll2Top {
+    display: block;
+    position: fixed;
+    right: "15px";
+    bottom: "60px";
+}
+
+/* フッターが表示されている場合のスタイル */
+
+/* フッターの上に固定するスタイル */
+.scroll2TopAtBottom {
+    display: block;
+    position: absolute;
+    right: "15px";
+    bottom: "110px";
 }

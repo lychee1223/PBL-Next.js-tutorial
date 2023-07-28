@@ -6,6 +6,8 @@ import React, { useState } from 'react';
 
 import Link from 'next/link';
 
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 import {
     Heading,
@@ -28,55 +30,10 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+
             <main className={`${styles.main} ${inter.className}`}>
-
                 {/* ヘッダ */}
-                <div className={styles.header}>
-                    <Box bg="gray.800" color="white" p={4} id="head">
-
-                        {/* サイト名 */}
-                        <div className={styles.siteName}>
-                            <Heading size="lg" colorScheme="whiteAlpha">
-                                <Link href="../">
-                                    三毛猫のアンドロン
-                                </Link>
-                            </Heading>
-                        </div>
-
-
-                        {/* グローバルナビ */}
-                        <div className={styles.navi}>
-                            <Tabs variant="soft-rounded" colorScheme="green" defaultIndex={3}>
-                                <TabList>
-                                    <Tab>
-                                        <Link href="/">
-                                            Top
-                                        </Link>
-                                    </Tab>
-                                    <Tab>
-                                        <Link href="/profile">
-                                            Profile
-                                        </Link>
-                                    </Tab>
-                                    <Tab>
-                                        <Link href="/works">
-                                            Works
-                                        </Link>
-                                    </Tab>
-                                    <Tab>
-                                        <Link href="/blog">
-                                            Blog
-                                        </Link>
-                                    </Tab>
-                                </TabList>
-                            </Tabs>
-
-
-                        </div>
-
-                        {/* ハンバーガーメニュー */}
-                    </Box>
-                </div>
+                <Header defaultIndex={3}/>
 
                 {/* コンテンツ */}
                 <div className={styles.content}>
@@ -113,17 +70,10 @@ export default function Home() {
                         <br /><br /><br /><br /><br /><br />
                     </Box>
                 </div>
+
                 {/* フッター */}
-                <div className={styles.footer}>
-                    <Box bg="gray.800" color="white" p={4}>
-                        &copy;skip
-                    </Box>
-                </div>
-
-
-
+                <Footer />
             </main>
-
         </>
     )
 }

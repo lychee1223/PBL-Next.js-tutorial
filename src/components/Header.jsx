@@ -1,63 +1,71 @@
-import styles from '@/styles/Home.module.css'
-import Link from 'next/link';
+import Link from "next/link";
 
 import {
-    Heading,
     Box,
-
+    HStack,
+    Heading,
     Tabs,
     TabList,
     Tab,
-} from '@chakra-ui/react'
+    IconButton,
+    Divider,
+} from "@chakra-ui/react"
+import { FaGithub, } from "react-icons/fa"
+import { BiLogoGmail, } from "react-icons/bi"
 
-function Header() {
+import Theme from "@/components/Theme";
+import MailToIcon from "./MailToIcon"
+
+function Header(props) {
+    const URL = {
+        github: "https://github.com/lychee1223",
+    }
+
     return (
-        <div className={styles.header}>
-            <Box bg="gray.800" color="white" p={4} id="head">
-
+        <Box w="100%" pos="fixed" zIndex="9999" bg={Theme.color.backgroundC}>
+            <HStack p={4}>
                 {/* サイト名 */}
-                <div className={styles.siteName}>
-                    <Heading size="lg" colorScheme="whiteAlpha">
-                        <Link href="../">
-                            三毛猫のアンドロン
-                        </Link>
-                    </Heading>
-                </div>
-
+                <Link href="/">
+                    <Heading size="lg" color={Theme.color.main}>三毛猫のアンドロン</Heading>
+                </Link>
 
                 {/* グローバルナビ */}
-                <div className={styles.navi}>
-                    <Tabs variant="soft-rounded" colorScheme="green" defaultIndex={0}>
-                        <TabList>
-                            <Tab>
-                                <Link href="/">
-                                    Top
-                                </Link>
-                            </Tab>
-                            <Tab>
-                                <Link href="/profile">
-                                    Profile
-                                </Link>
-                            </Tab>
-                            <Tab>
-                                <Link href="/works">
-                                    Works
-                                </Link>
-                            </Tab>
-                            <Tab>
-                                <Link href="/blog">
-                                    Blog
-                                </Link>
-                            </Tab>
-                        </TabList>
-                    </Tabs>
+                <Tabs ml="auto" colorScheme="blue" variant="soft-rounded" defaultIndex={props.defaultIndex}>
+                    <TabList>
+                        <Link href="/">
+                            <Tab>Top</Tab>
+                        </Link>
+                        <Link href="/about">
+                            <Tab>About</Tab>
+                        </Link>
+                        <Link href="/works">
+                            <Tab>Works</Tab>
+                        </Link>
+                        <Link href="/blog">
+                            <Tab>Blog</Tab>
+                        </Link>
+                    </TabList>
+                </Tabs>
 
+                {/* リンク(アイコン) */}
+                <HStack spacing={2} justify="flex-end">
+                    <IconButton
+                        as="a"
+                        href={URL.github}
+                        target="_blank"
+                        aria-label="GitHub"
+                        icon={<FaGithub />}
+                        fontSize={30}
+                    />
+                    <MailToIcon icon={<BiLogoGmail />} fontSize={30} />
 
-                </div>
+                </HStack>
+            </HStack>
+            <Divider
+                boxShadow="0px 2px 4px rgba(0, 0, 0, 0.5)"
+            />
+        </Box>
 
-                {/* ハンバーガーメニュー */}
-            </Box>
-        </div>
     )
 }
 
