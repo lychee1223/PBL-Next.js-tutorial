@@ -58,7 +58,7 @@ export default function Home() {
                                         src="/img/works/PoA/PoA_image2.png"
                                         alt="workImage01"
                                         boxSize="100%" objectFit="contain"
-                                        ml="auto" mr="10%"
+                                        mr="10%"
                                     />
                                 </Box>
                                 <Box h="50%" w="100%" p={4} bg="red">
@@ -66,7 +66,7 @@ export default function Home() {
                                         src="/img/works/PoA/PoA_image3.png"
                                         alt="workImage02"
                                         boxSize="100%" objectFit="contain"
-                                        ml="10%" mr="auto"
+                                        ml="10%"
                                     />
                                 </Box>
                             </VStack>
