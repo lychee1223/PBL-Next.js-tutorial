@@ -58,12 +58,12 @@ export default function Home() {
             body: (
                 <Box>
                     <VStack>
-                    <Text>古代ギリシアが舞台の脱出アドベンチャーです</Text>
-                    <Text>紀元前431年、疫病が蔓延したアテナイで女神アテナの祝福を求めパルテノン神殿を目指しましょう！</Text>
-                    <br/>
-                    <Text>ダウンロード：coming soon</Text>
+                        <Text mr="auto">古代ギリシアが舞台の脱出アドベンチャーです</Text>
+                        <Text mr="auto">紀元前431年、疫病が蔓延したアテナイで女神アテナの祝福を求めパルテノン神殿を目指しましょう！</Text>
+                        <br />
+                        <Text mr="auto">ダウンロード：coming soon</Text>
                     </VStack>
-                </Box>
+                </Box >
             )
         },
         {
