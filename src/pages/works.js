@@ -16,6 +16,7 @@ import {
     Tag,
     TagLabel,
     CloseButton,
+    VStack,
 } from "@chakra-ui/react"
 import React, { useState } from "react";
 
@@ -55,10 +56,12 @@ export default function Home() {
             title: "Plague of Athens",
             body: (
                 <Box>
-                    古代ギリシアが舞台の脱出アドベンチャーです
-                    紀元前431年、疫病が蔓延したアテナイで女神アテナの祝福を求めパルテノン神殿を目指しましょう！
-
-                    ダウンロード：coming soon
+                    <VStack>
+                    <Text>古代ギリシアが舞台の脱出アドベンチャーです</Text>
+                    <Text>紀元前431年、疫病が蔓延したアテナイで女神アテナの祝福を求めパルテノン神殿を目指しましょう！</Text>
+                    <br/>
+                    <Text>ダウンロード：coming soon</Text>
+                    </VStack>
                 </Box>
             )
         },
