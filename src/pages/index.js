@@ -53,20 +53,20 @@ export default function Home() {
 
                             {/* イメージ画像 */}
                             <VStack h="100%" w="50%" justify="center" spacing={0} >
-                                <Box h="50%" w="100%" p={4} bg="blue">
+                                <Box h="50%" w="100%" p={4} mr="10%" bg="gray.100">
                                     <Image
                                         src="/img/works/PoA/PoA_image2.png"
                                         alt="workImage01"
                                         boxSize="100%" objectFit="contain"
-                                        ml="auto" mr="10%"
+                                        ml="auto"
                                     />
                                 </Box>
-                                <Box h="50%" w="100%" p={4} bg="red">
+                                <Box h="50%" w="100%" p={4} ml="10%" bg="green">
                                     <Image
                                         src="/img/works/PoA/PoA_image3.png"
                                         alt="workImage02"
                                         boxSize="100%" objectFit="contain"
-                                        mr="auto" ml="10%"
+                                        mr="auto"
                                     />
                                 </Box>
                             </VStack>
