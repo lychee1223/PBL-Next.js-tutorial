@@ -52,19 +52,23 @@ export default function Home() {
                             </VStack>
 
                             {/* イメージ画像 */}
-                            <VStack h="100%" w="50%" justify="center">
-                                <Image
-                                    src="/img/works/PoA/PoA_image2.png"
-                                    alt="workImage01"
-                                    boxSize="45%" objectFit="contain"
-                                    ml="auto" mr="10%"
-                                />
-                                <Image
-                                    src="/img/works/PoA/PoA_image3.png"
-                                    alt="workImage02"
-                                    boxSize="45%" objectFit="contain"
-                                    ml="10%" mr="auto"
-                                />
+                            <VStack h="100%" w="50%" justify="center" spacing={0} >
+                                <Box h="50%" p={4} bg="blue">
+                                    <Image
+                                        src="/img/works/PoA/PoA_image2.png"
+                                        alt="workImage01"
+                                        boxSize="100%" objectFit="contain"
+                                        ml="auto" mr="10%"
+                                    />
+                                </Box>
+                                <Box h="50%" p={4} bg="red">
+                                    <Image
+                                        src="/img/works/PoA/PoA_image3.png"
+                                        alt="workImage02"
+                                        boxSize="45%" objectFit="contain"
+                                        ml="10%" mr="auto"
+                                    />
+                                </Box>
                             </VStack>
                         </HStack>
                     </Box>
@@ -77,7 +81,7 @@ export default function Home() {
                                 <Image
                                     src="/img/works/coding_image.png"
                                     alt="nlpImage01"
-                                    boxSize="45%" objectFit="contain"
+                                    boxSize="80%" objectFit="contain"
                                 />
                             </VStack>
 
