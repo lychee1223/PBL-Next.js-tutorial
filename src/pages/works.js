@@ -142,7 +142,7 @@ export default function Home() {
                             <TabList bg={Theme.color.backgroundA}>
                                 <Tab onClick={() => handleChangeFilter(0)}>ALL</Tab>
                                 {Object.entries(TAG_MAP).map(([key, value], index) => (
-                                    <Tab onClick={() => handleChangeFilter(index + 1)}>
+                                    <Tab onClick={() => handleChangeFilter(index + 1)} key={index}>
                                         {value.name}
                                     </Tab>
                                 ))}
@@ -154,7 +154,7 @@ export default function Home() {
                                 <TabPanel>
                                     <SimpleGrid spacing="15px" minChildWidth="250px">
                                         {WORK_LIST.map((element, index) => (
-                                            <Box onClick={() => handleChangePage(index)}>
+                                            <Box onClick={() => handleChangePage(index)} key={index}>
                                                 <WorkCard
                                                     thumbnail={element.imageList[0]}
                                                     tag={element.tag}
@@ -173,8 +173,8 @@ export default function Home() {
                                 </TabPanel>
 
                                 {/* 各フィルタをかけた際の一覧 */}
-                                {Object.entries(TAG_MAP).map(([key, value]) => (
-                                    <TabPanel>
+                                {Object.entries(TAG_MAP).map(([key, value], index) => (
+                                    <TabPanel key={index}>
                                         <SimpleGrid spacing="15px" minChildWidth="250px">
                                             {WORK_LIST.map((element, index) => (
                                                 (() => {

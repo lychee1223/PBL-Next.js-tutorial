@@ -81,8 +81,8 @@ export default function Home() {
                     <Box p={4} bg={Theme.color.backgroundB}>
                         <Heading size="4xl" mb={4} align="center" color={Theme.color.main}>SKILL</Heading>
                         <SimpleGrid spacing="15px" minChildWidth="250px">
-                            {SKILL_LIST.map((skill) => (
-                                <Box p={2} aspectRatio={1.5} bg={Theme.color.backgroundC}>
+                            {SKILL_LIST.map((skill, index) => (
+                                <Box p={2} aspectRatio={1.5} bg={Theme.color.backgroundC} key={index}>
                                     <HStack h="100%">
                                         {skill.icon}
                                         <VStack mb="auto">
