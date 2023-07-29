@@ -20,6 +20,7 @@ function WorkCard(props) {
                     <Box h="55%">
                         <Image
                             src={props.thumbnail}
+                            alt="thumbnail"
                             boxSize="100%" objectFit="contain"
                         />
                     </Box>

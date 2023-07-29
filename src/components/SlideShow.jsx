@@ -26,6 +26,7 @@ function SlideShow(props) {
             <Box h="100%" m="auto" pointerEvents="none">
                 <Image
                     src={props.imageList[currentIndex]}
+                    alt={`slideshow${currentIndex}`}
                     boxSize="100%" objectFit="contain"
                     style={{ userSelect: 'none' }}
                 />

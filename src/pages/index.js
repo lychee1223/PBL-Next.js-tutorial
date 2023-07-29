@@ -54,31 +54,28 @@ export default function Home() {
                             {/* イメージ画像 */}
                             <VStack h="100%" w="50%" justify="center">
                                 <Image
-                                    src="/img/works/PoA/PoA_image2.png"
+                                    src="/img/works/coding_image.png"
+                                    alt="workImage01"
                                     w="60%"
-                                    ml="auto" mr="10%"
-                                />
-                                <Image
-                                    src="/img/works/PoA/PoA_image3.png"
-                                    w="60%"
-                                    ml="10%" mr="auto"
                                 />
                             </VStack>
                         </HStack>
                     </Box>
 
-                    {/* ゲーム開発特集 */}
+                    {/* 自然言語処理特集 */}
                     <Box h="500px" bg={Theme.color.backgroundA}>
                         <HStack h="100%" spacing={0}>
                             {/* イメージ画像 */}
                             <VStack h="100%" w="50%" justify="center">
                                 <Image
                                     src="/img/works/PoA/PoA_image2.png"
+                                    alt="workImage02"
                                     w="60%"
                                     ml="auto" mr="10%"
                                 />
                                 <Image
                                     src="/img/works/PoA/PoA_image3.png"
+                                    alt="workImage02"
                                     w="60%"
                                     ml="10%" mr="auto"
                                 />

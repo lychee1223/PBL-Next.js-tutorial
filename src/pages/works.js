@@ -52,25 +52,13 @@ export default function Home() {
                 "/img/works/PoA/PoA_image2.png",
                 "/img/works/PoA/PoA_image3.png",
             ],
-            title: "記事1",
+            title: "Plague of Athens",
             body: (
                 <Box>
-                    Unityで作ったよ！
-                </Box>
-            )
-        },
-        {
-            tag: TAG_MAP.unity,
-            date: "2022/07/24",
-            imageList: [
-                "/img/works/PoA/PoA_image1.png",
-                "/img/works/PoA/PoA_image2.png",
-                "/img/works/PoA/PoA_image3.png",
-            ],
-            title: "記事2",
-            body: (
-                <Box>
-                    Unityで作ったよ！
+                    古代ギリシアが舞台の脱出アドベンチャーです
+                    紀元前431年、疫病が蔓延したアテナイで女神アテナの祝福を求めパルテノン神殿を目指しましょう！
+
+                    ダウンロード：coming soon
                 </Box>
             )
         },
@@ -78,14 +66,25 @@ export default function Home() {
             tag: TAG_MAP.ue,
             date: "2022/07/24",
             imageList: [
-                "/img/works/PoA/PoA_image1.png",
-                "/img/works/PoA/PoA_image2.png",
-                "/img/works/PoA/PoA_image3.png",
+                "/img/works/coming_soon.png",
             ],
-            title: "記事3",
+            title: "3Dアクション",
             body: (
                 <Box>
-                    Unityで作ったよ！
+                    開発中
+                </Box>
+            )
+        },
+        {
+            tag: TAG_MAP.ue,
+            date: "2022/07/24",
+            imageList: [
+                "/img/works/coming_soon.png",
+            ],
+            title: "ミニゲーム",
+            body: (
+                <Box>
+                    開発予定
                 </Box>
             )
         },
@@ -93,14 +92,12 @@ export default function Home() {
             tag: TAG_MAP.ai,
             date: "2022/07/24",
             imageList: [
-                "/img/works/PoA/PoA_image1.png",
-                "/img/works/PoA/PoA_image2.png",
-                "/img/works/PoA/PoA_image3.png",
+                "/img/works/coming_soon.png",
             ],
-            title: "記事4",
+            title: "NLPな何か",
             body: (
                 <Box>
-                    Unityで作ったよ！
+                    開発予定
                 </Box>
             )
         },

@@ -65,6 +65,7 @@ export default function Home() {
                         <HStack h="100%" spacing={20} >
                             <Image
                                 src="/img/background.png"
+                                alt="icon"
                                 w="20%"
                                 ml="auto"
                             />
