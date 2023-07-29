@@ -17,7 +17,7 @@ function WorkCard(props) {
             <Card p={1} aspectRatio={1} bg={Theme.color.backgroundC}>
                 <CardBody spacing={20}>
                     {/* サムネ */}
-                    <Box h="50%">
+                    <Box h="60%">
                         <Image
                             src={props.thumbnail}
                             alt="thumbnail"
@@ -26,7 +26,7 @@ function WorkCard(props) {
                     </Box>
 
                     {/* 見出し */}
-                    <Box h="50%" pt={2}>
+                    <Box h="40%" pt={2}>
                         <VStack>
                             {/* タグ */}
                             <Tag
