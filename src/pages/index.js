@@ -54,9 +54,16 @@ export default function Home() {
                             {/* イメージ画像 */}
                             <VStack h="100%" w="50%" justify="center">
                                 <Image
-                                    src="/img/works/coding_image.png"
+                                    src="/img/works/PoA/PoA_image2.png"
                                     alt="workImage01"
                                     w="60%"
+                                    ml="auto" mr="10%"
+                                />
+                                <Image
+                                    src="/img/works/PoA/PoA_image3.png"
+                                    alt="workImage02"
+                                    w="60%"
+                                    ml="10%" mr="auto"
                                 />
                             </VStack>
                         </HStack>
@@ -67,17 +74,10 @@ export default function Home() {
                         <HStack h="100%" spacing={0}>
                             {/* イメージ画像 */}
                             <VStack h="100%" w="50%" justify="center">
-                                <Image
-                                    src="/img/works/PoA/PoA_image2.png"
-                                    alt="workImage02"
+                            <Image
+                                    src="/img/works/coding_image.png"
+                                    alt="nlpImage01"
                                     w="60%"
-                                    ml="auto" mr="10%"
-                                />
-                                <Image
-                                    src="/img/works/PoA/PoA_image3.png"
-                                    alt="workImage02"
-                                    w="60%"
-                                    ml="10%" mr="auto"
                                 />
                             </VStack>
 

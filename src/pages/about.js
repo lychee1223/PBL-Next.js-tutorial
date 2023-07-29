@@ -64,7 +64,7 @@ export default function Home() {
                     <Box h="500px" bg={Theme.color.backgroundA}>
                         <HStack h="100%" spacing={20} >
                             <Image
-                                src="/img/background.png"
+                                src="/img/icon.png"
                                 alt="icon"
                                 w="20%"
                                 ml="auto"
