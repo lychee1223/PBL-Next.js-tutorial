@@ -6,7 +6,9 @@ const inter = Inter({ subsets: ["latin"] })
 import {
     Box,
     HStack,
+    VStack,
     Heading,
+    Text,
     Tabs,
     TabList,
     Tab,
