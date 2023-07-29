@@ -18,7 +18,6 @@ import {
     Tag,
     TagLabel,
     CloseButton,
-    VStack,
 } from "@chakra-ui/react"
 import React, { useState } from "react";
 
