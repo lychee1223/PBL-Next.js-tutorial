@@ -43,7 +43,7 @@ export default function Home() {
                     </Box>
 
                     {/* ゲーム開発特集 */}
-                    <Box h="500px" bg={Theme.color.backgroundB}>
+                    <Box h="500px" p={4} bg={Theme.color.backgroundB}>
                         <HStack h="100%" spacing={0} >
                             {/* テキスト */}
                             <VStack h="100%" w="50%" spacing={3} justify="center">
@@ -56,13 +56,13 @@ export default function Home() {
                                 <Image
                                     src="/img/works/PoA/PoA_image2.png"
                                     alt="workImage01"
-                                    w="60%"
+                                    boxSize="100%" objectFit="contain"
                                     ml="auto" mr="10%"
                                 />
                                 <Image
                                     src="/img/works/PoA/PoA_image3.png"
                                     alt="workImage02"
-                                    w="60%"
+                                    boxSize="100%" objectFit="contain"
                                     ml="10%" mr="auto"
                                 />
                             </VStack>
@@ -78,6 +78,7 @@ export default function Home() {
                                     src="/img/works/coding_image.png"
                                     alt="nlpImage01"
                                     w="60%"
+                                    boxSize="100%" objectFit="contain"
                                 />
                             </VStack>
 
