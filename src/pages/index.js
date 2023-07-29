@@ -53,7 +53,7 @@ export default function Home() {
 
                             {/* イメージ画像 */}
                             <VStack h="100%" w="50%" justify="center" spacing={0} >
-                                <Box h="50%" w="100%" p={4} mr="10%" bg="gray.100">
+                                <Box h="50%" w="100%" p={4} mr="10%">
                                     <Image
                                         src="/img/works/PoA/PoA_image2.png"
                                         alt="workImage01"
@@ -61,7 +61,7 @@ export default function Home() {
                                         ml="auto"
                                     />
                                 </Box>
-                                <Box h="50%" w="100%" p={4} ml="10%" bg="green">
+                                <Box h="50%" w="100%" p={4} ml="10%">
                                     <Image
                                         src="/img/works/PoA/PoA_image3.png"
                                         alt="workImage02"
@@ -77,7 +77,7 @@ export default function Home() {
                     <Box h="500px" bg={Theme.color.backgroundA}>
                         <HStack h="100%" spacing={0}>
                             {/* イメージ画像 */}
-                            <VStack bg="red" h="100%" w="50%" justify="center">
+                            <VStack h="100%" w="50%" justify="center">
                                 <Image
                                     src="/img/works/coding_image.png"
                                     alt="nlpImage01"
