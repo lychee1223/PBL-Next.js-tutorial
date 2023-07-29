@@ -73,8 +73,8 @@ export default function Home() {
                     <Box h="500px" bg={Theme.color.backgroundA}>
                         <HStack h="100%" spacing={0}>
                             {/* イメージ画像 */}
-                            <VStack h="100%" w="50%" justify="center">
-                            <Image
+                            <VStack bg="red" h="90%" w="50%" justify="center">
+                                <Image
                                     src="/img/works/coding_image.png"
                                     alt="nlpImage01"
                                     w="60%"
