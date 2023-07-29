@@ -8,6 +8,7 @@ import {
     Tag,
     TagLabel,
 } from "@chakra-ui/react"
+import FitText from "react-fittext";
 
 import Theme from "@/components/Theme";
 
@@ -39,7 +40,9 @@ function WorkCard(props) {
                             </Tag>
 
                             {/* タイトル */}
-                            <Heading color={Theme.color.main}>{props.title}</Heading>
+                            <FitText compressor={0.9}>
+                                <Heading color={Theme.color.main}>{props.title}</Heading>
+                            </FitText>
                         </VStack>
                     </Box>
                 </CardBody>
