@@ -56,13 +56,13 @@ export default function Home() {
                                 <Image
                                     src="/img/works/PoA/PoA_image2.png"
                                     alt="workImage01"
-                                    boxSize="100%" objectFit="contain"
+                                    boxSize="45%" objectFit="contain"
                                     ml="auto" mr="10%"
                                 />
                                 <Image
                                     src="/img/works/PoA/PoA_image3.png"
                                     alt="workImage02"
-                                    boxSize="100%" objectFit="contain"
+                                    boxSize="45%" objectFit="contain"
                                     ml="10%" mr="auto"
                                 />
                             </VStack>
@@ -73,12 +73,11 @@ export default function Home() {
                     <Box h="500px" bg={Theme.color.backgroundA}>
                         <HStack h="100%" spacing={0}>
                             {/* イメージ画像 */}
-                            <VStack bg="red" h="90%" w="50%" justify="center">
+                            <VStack bg="red" h="100%" w="50%" justify="center">
                                 <Image
                                     src="/img/works/coding_image.png"
                                     alt="nlpImage01"
-                                    w="60%"
-                                    boxSize="100%" objectFit="contain"
+                                    boxSize="45%" objectFit="contain"
                                 />
                             </VStack>
 
