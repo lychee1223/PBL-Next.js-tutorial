@@ -8,17 +8,16 @@ import {
     Tag,
     TagLabel,
 } from "@chakra-ui/react"
-import FitText from "react-fittext";
 
 import Theme from "@/components/Theme";
 
 function WorkCard(props) {
     return (
         <>
-            <Card p={2} aspectRatio={1} bg={Theme.color.backgroundC}>
+            <Card p={1} aspectRatio={1} bg={Theme.color.backgroundC}>
                 <CardBody spacing={20}>
                     {/* サムネ */}
-                    <Box h="55%">
+                    <Box h="50%">
                         <Image
                             src={props.thumbnail}
                             alt="thumbnail"
@@ -27,7 +26,7 @@ function WorkCard(props) {
                     </Box>
 
                     {/* 見出し */}
-                    <Box h="45%" pt={2}>
+                    <Box h="50%" pt={2}>
                         <VStack>
                             {/* タグ */}
                             <Tag
@@ -40,9 +39,7 @@ function WorkCard(props) {
                             </Tag>
 
                             {/* タイトル */}
-                            <FitText compressor={0.9}>
-                                <Heading color={Theme.color.main}>{props.title}</Heading>
-                            </FitText>
+                            <Heading size="md" color={Theme.color.main}>{props.title}</Heading>
                         </VStack>
                     </Box>
                 </CardBody>
